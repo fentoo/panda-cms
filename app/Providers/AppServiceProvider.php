@@ -24,6 +24,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        // Ide helper support in development mode
         if ($this->app->environment('local')) {
             $this->app->register(IdeHelperServiceProvider::class);
         }
