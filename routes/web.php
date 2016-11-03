@@ -12,5 +12,5 @@
 */
 
 Route::get('/', function () {
-    return "Hi! Welcome to using " . config('app.name');
+    return "Hi! Welcome to using " . config('app.name') . ", Current env is " . App::environment();
 });
