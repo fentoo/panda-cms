@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('user/{user}', function (\App\Models\User $user){
     return $user->email;
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
