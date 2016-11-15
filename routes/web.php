@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return "Hi! Welcome to using " . config('app.name') . ", Current env is " . App::environment();
 });
+
+Route::get('user/{user}', function (\App\Models\User $user){
+    return $user->email;
+});
