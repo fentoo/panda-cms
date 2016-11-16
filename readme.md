@@ -12,6 +12,9 @@
         1. Go to "resources/assets/semantic/" directory
         2. Run "gulp build"
         3. Then the built file will located in "public/semantic/" directory
+    * **Notice**
+        > You can remove google fonts support via semantic/src/site/site.variables file
+        > Add @importGoogleFonts : false;
 
 * **laravel-elixir**
 > Just run: npm install 
