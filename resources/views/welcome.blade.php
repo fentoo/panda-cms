@@ -8,8 +8,11 @@
         <link rel="stylesheet" href="{{ asset('semantic/semantic.min.css') }}">
     </head>
     <body>
-    <div>
-        <button class="ui button">Follow</button>
+    <div class="ui labeled button" tabindex="0">
+        <div class="ui red button">
+            <i class="heart icon"></i> Like
+        </div>
+        <a class="ui basic red left pointing label">1,024</a>
     </div>
 
     <script src="{{ asset('js/jquery.js') }}"></script>
